@@ -1,0 +1,23 @@
+.about img {
+    animation-name: ilustration;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes ilustration {
+    0% {
+        transform: translate(0px);
+    }    
+    100% {
+        transform: translate(260px);
+    }
+}
+
+.skills__container {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 15px;
+}

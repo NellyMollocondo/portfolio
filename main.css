@@ -1,6 +1,7 @@
 :root {
     --primary: #45505B;
     --secondary: #0563BB;
+    --background-color: #f2f3f5;
 }
 
 * {
@@ -103,15 +104,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     min-width: 300px;
     height: 100%;
     font-size: 2rem;
     font-family: Poppins;
-}
-
-.hero div {
-    align-self: center;
+    background: var(--background-color);
 }
 
 .hero h1 {
@@ -126,23 +125,10 @@ header {
 }
 
 .hero img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     opacity: 0.8;
     padding-top: 40px;
-    animation-name: ilustration;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-@keyframes ilustration {
-    0% {
-        transform: translate(0px);
-    }    
-    100% {
-        transform: translate(50px);
-    }
 }
 
 .main__section {
@@ -155,15 +141,9 @@ header {
 }
 
 .about img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     opacity: 0.8;
-    animation-name: ilustration;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
 }
 
 .about .container {
@@ -181,8 +161,12 @@ header {
 }
 
 .paragraph {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding-bottom: 16px;
+}
+
+.skills {
+    background: var(--background-color);
 }
 
 .skills .container {
@@ -198,12 +182,19 @@ header {
     grid-auto-rows: 150px;
     gap: 10px;
     width: 100%;
+    min-width: 300px;
+    max-width: 900px;
+    padding: 20px;
 }
 
 .skills__container--item {
-    background: #f2f3f5; 
+    background: white; 
     border-radius: 15px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .skills__container--item span {
@@ -272,7 +263,6 @@ header {
 
 .portfolio .container {
     width: 100%;
-    min-height: 100vh;
     min-width: 300px;
     max-width: 900px;
     padding: 16px;
@@ -280,9 +270,13 @@ header {
 
 .portfolio .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 250px;
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 20px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 900px;
+    padding: 16px;
 }
 
 .project {
@@ -359,11 +353,42 @@ header {
     background-size: cover;
 }
 
+.project-4 {
+    border: 1px solid #f2f3f5;
+    background: url(./imagenes/portfolio/to-do.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 60px;
+    padding-top: 10px;
     background: #f2f3f5;
+}
+
+footer svg {
+    vertical-align: sub;
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    /* animation-delay: 500ms; */
+}
+
+/* footer:hover svg {
+    transform: scale(1.2);
+} */
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+        transition: transform 500ms ease-in;
+    }
 }
