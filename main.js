@@ -25,6 +25,7 @@ const hardSkills = [
   { 'skill': 'CSS 3', 'url': './imagenes/svg/css3.svg' },
   { 'skill': 'JavaScript', 'url': './imagenes/svg/javascript.svg' },
   { 'skill': 'Tailwind', 'url': './imagenes/svg/tailwindcss.svg' },
+  { 'skill': 'Bootstrap', 'url': './imagenes/svg/bootstrap.svg' },
   { 'skill': 'Git', 'url': './imagenes/svg/git.svg' },
   { 'skill': 'Github', 'url': './imagenes/svg/github.svg' },
 ];
@@ -60,10 +61,11 @@ const showHardSkills = () => {
 // list projects
 
 const projects = [
-  { 'name': 'Batatabit', 'description': 'Landing page de criptomonedas', 'url-github': 'https://github.com/NellyMollocondo/batatabit-landing-page', 'url-web': 'https://nellymollocondo.github.io/batatabit-landing-page/index.html', 'url-image':'./imagenes/portfolio/batatabit.jpg' },
+  { 'name': 'Encriptador de texto', 'description': 'aplicación para encriptador y desencriptar texto', 'url-github': 'https://github.com/NellyMollocondo/Encriptador-de-texto--Challenge1-ONE', 'url-web': 'https://nellymollocondo.github.io/Encriptador-de-texto--Challenge1-ONE/', 'url-image': './imagenes/portfolio/encriptador-texto.JPG' },
+  // { 'name': 'To - do', 'description': 'Lista de pendientes con React', 'url-github': 'https://github.com/NellyMollocondo/to-do', 'url-web': 'https://nellymollocondo.github.io/to-do/', 'url-image': './imagenes/portfolio/to-do.jpg' },
   { 'name': 'Platzi Travel', 'description': 'Landing page de viajes', 'url-github': 'https://github.com/NellyMollocondo/platzi-travel', 'url-web': 'https://nellymollocondo.github.io/platzi-travel/public/index.html', 'url-image': './imagenes/portfolio/platzi-travel.jpg' },
+  { 'name': 'Batatabit', 'description': 'Landing page de criptomonedas', 'url-github': 'https://github.com/NellyMollocondo/batatabit-landing-page', 'url-web': 'https://nellymollocondo.github.io/batatabit-landing-page/index.html', 'url-image':'./imagenes/portfolio/batatabit.jpg' },  
   { 'name': 'Google clone', 'description': 'Clone de google', 'url-github': 'https://github.com/NellyMollocondo/google-clone', 'url-web': 'https://nellymollocondo.github.io/google-clone/', 'url-image': './imagenes/portfolio/google-clone.jpg' },
-  { 'name': 'To - do', 'description': 'Lista de pendientes con React', 'url-github': 'https://github.com/NellyMollocondo/to-do', 'url-web': 'https://nellymollocondo.github.io/to-do/', 'url-image': './imagenes/portfolio/to-do.jpg' },
 ];
 
 // show projects
