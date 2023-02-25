@@ -1,164 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./tablet.css" media="(min-width:930px)">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Raleway:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <button id="buttonMenu" class="button button-menu">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentcolor"><path d="M3.25 17.625v-1.5h17.5v1.5Zm0-4.875v-1.5h17.5v1.5Zm0-4.875v-1.5h17.5v1.5Z"/></svg>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Developer Junior | Portafolio</title>
+    <!-- hojas de estilo -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./tablet.css" media="(min-width:930px)" />
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+    <button id="buttonMenu" class="button button-menu" name="menu">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24"
+        width="24"
+        fill="currentcolor"
+      >
+        <path
+          d="M3.25 17.625v-1.5h17.5v1.5Zm0-4.875v-1.5h17.5v1.5Zm0-4.875v-1.5h17.5v1.5Z"
+        />
+      </svg>
     </button>
-    <button id="buttonClose" class="button button-close">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentcolor"><path d="M6.4 18.65 5.35 17.6l5.6-5.6-5.6-5.6L6.4 5.35l5.6 5.6 5.6-5.6 1.05 1.05-5.6 5.6 5.6 5.6-1.05 1.05-5.6-5.6Z"/></svg>
+    <button id="buttonClose" class="button button-close" name="close">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24"
+        width="24"
+        fill="currentcolor"
+      >
+        <path
+          d="M6.4 18.65 5.35 17.6l5.6-5.6-5.6-5.6L6.4 5.35l5.6 5.6 5.6-5.6 1.05 1.05-5.6 5.6 5.6 5.6-1.05 1.05-5.6-5.6Z"
+        />
+      </svg>
     </button>
+    </div>
+    <!-- menu -->
     <nav id="menu" class="navbar">
-        <ul class="navbar__menu">
-            <li>
-                <a href="#home">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentcolor"><path d="M4.5 20.5V9.25L12 3.625l7.5 5.625V20.5h-5.575v-6.7h-3.85v6.7ZM6 19h2.575v-6.7h6.85V19H18v-9l-6-4.5L6 10Zm6-6.75Z"/></svg>
-                    <span>Inicio</span>
-                </a>
-            </li>
-            <li>
-                <a href="#about">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentcolor"><path d="M12 11.7q-1.45 0-2.475-1.038Q8.5 9.625 8.5 8.2q0-1.45 1.025-2.475Q10.55 4.7 12 4.7q1.45 0 2.475 1.025Q15.5 6.75 15.5 8.2q0 1.425-1.025 2.462Q13.45 11.7 12 11.7Zm-7.5 7.6v-2.225q0-.725.4-1.35.4-.625 1.075-.975 1.475-.725 2.988-1.088Q10.475 13.3 12 13.3t3.038.362q1.512.363 2.987 1.088.675.35 1.075.975.4.625.4 1.35V19.3ZM6 17.8h12v-.725q0-.3-.175-.55-.175-.25-.475-.425-1.3-.625-2.637-.963Q13.375 14.8 12 14.8t-2.713.337q-1.337.338-2.637.963-.3.175-.475.425t-.175.55Zm6-7.6q.825 0 1.413-.588Q14 9.025 14 8.2t-.587-1.413Q12.825 6.2 12 6.2q-.825 0-1.412.587Q10 7.375 10 8.2q0 .825.588 1.412.587.588 1.412.588Zm0-2Zm0 9.6Z"/></svg>
-                    <span>Sobre mi</span>
-                </a>
-            </li>
-            <li>
-                <a href="#skills">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentcolor"><path d="m12 19.85-6.5-3.525V10.9L2.05 9 12 3.575 21.95 9v7.2h-1.5V9.825L18.5 10.9v5.425Zm0-7.15L18.85 9 12 5.3 5.15 9Zm0 5.45 5-2.7V11.7l-5 2.725L7 11.7v3.75Zm0-5.45Zm0 1.8Zm0 0Z"/></svg>
-                    <span>Habilidades</span>
-                </a>
-            </li>
-            <li>
-                <a href="#portfolio">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentcolor"><path d="M4.3 20.5q-.75 0-1.275-.525Q2.5 19.45 2.5 18.7V8.3q0-.75.525-1.275Q3.55 6.5 4.3 6.5h4.2V4.8q0-.75.525-1.275Q9.55 3 10.3 3h3.4q.75 0 1.275.525.525.525.525 1.275v1.7h4.2q.75 0 1.275.525.525.525.525 1.275v10.4q0 .75-.525 1.275-.525.525-1.275.525Zm0-1.5h15.4q.1 0 .2-.1t.1-.2V8.3q0-.1-.1-.2t-.2-.1H4.3q-.1 0-.2.1t-.1.2v10.4q0 .1.1.2t.2.1ZM10 6.5h4V4.8q0-.1-.1-.2t-.2-.1h-3.4q-.1 0-.2.1t-.1.2ZM4 19V8v11Z"/></svg>
-                    <span>Portafolio</span>
-                </a>
-            </li>
-        </ul>
+      <ul class="navbar__menu">
+        <li>
+          <a href="#home">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              width="24"
+              fill="currentcolor"
+            >
+              <path
+                d="M4.5 20.5V9.25L12 3.625l7.5 5.625V20.5h-5.575v-6.7h-3.85v6.7ZM6 19h2.575v-6.7h6.85V19H18v-9l-6-4.5L6 10Zm6-6.75Z"
+              />
+            </svg>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              width="24"
+              fill="currentcolor"
+            >
+              <path
+                d="M12 11.7q-1.45 0-2.475-1.038Q8.5 9.625 8.5 8.2q0-1.45 1.025-2.475Q10.55 4.7 12 4.7q1.45 0 2.475 1.025Q15.5 6.75 15.5 8.2q0 1.425-1.025 2.462Q13.45 11.7 12 11.7Zm-7.5 7.6v-2.225q0-.725.4-1.35.4-.625 1.075-.975 1.475-.725 2.988-1.088Q10.475 13.3 12 13.3t3.038.362q1.512.363 2.987 1.088.675.35 1.075.975.4.625.4 1.35V19.3ZM6 17.8h12v-.725q0-.3-.175-.55-.175-.25-.475-.425-1.3-.625-2.637-.963Q13.375 14.8 12 14.8t-2.713.337q-1.337.338-2.637.963-.3.175-.475.425t-.175.55Zm6-7.6q.825 0 1.413-.588Q14 9.025 14 8.2t-.587-1.413Q12.825 6.2 12 6.2q-.825 0-1.412.587Q10 7.375 10 8.2q0 .825.588 1.412.587.588 1.412.588Zm0-2Zm0 9.6Z"
+              />
+            </svg>
+            <span>Sobre mi</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              width="24"
+              fill="currentcolor"
+            >
+              <path
+                d="m12 19.85-6.5-3.525V10.9L2.05 9 12 3.575 21.95 9v7.2h-1.5V9.825L18.5 10.9v5.425Zm0-7.15L18.85 9 12 5.3 5.15 9Zm0 5.45 5-2.7V11.7l-5 2.725L7 11.7v3.75Zm0-5.45Zm0 1.8Zm0 0Z"
+              />
+            </svg>
+            <span>Habilidades</span>
+          </a>
+        </li>
+        <li>
+          <a href="#portfolio">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              width="24"
+              fill="currentcolor"
+            >
+              <path
+                d="M4.3 20.5q-.75 0-1.275-.525Q2.5 19.45 2.5 18.7V8.3q0-.75.525-1.275Q3.55 6.5 4.3 6.5h4.2V4.8q0-.75.525-1.275Q9.55 3 10.3 3h3.4q.75 0 1.275.525.525.525.525 1.275v1.7h4.2q.75 0 1.275.525.525.525.525 1.275v10.4q0 .75-.525 1.275-.525.525-1.275.525Zm0-1.5h15.4q.1 0 .2-.1t.1-.2V8.3q0-.1-.1-.2t-.2-.1H4.3q-.1 0-.2.1t-.1.2v10.4q0 .1.1.2t.2.1ZM10 6.5h4V4.8q0-.1-.1-.2t-.2-.1h-3.4q-.1 0-.2.1t-.1.2ZM4 19V8v11Z"
+              />
+            </svg>
+            <span>Portafolio</span>
+          </a>
+        </li>
+      </ul>
     </nav>
+    <!-- encabezado -->
     <header>
-        <section id="home" class="hero">
-            <div>
-                <h1>Nelly Mollocondo</h1>
-                <p>Frontend Developer Junior</p>
-            </div>
-            <figure>
-                <img src="./imagenes/background/web_development.svg" alt="">
-            </figure>
-        </section>
+      <section id="home" class="hero">
+        <div>
+          <h1>Nelly Mollocondo</h1>
+          <p>Frontend Developer Junior</p>
+        </div>
+        <figure>
+          <img
+            src="./imagenes/background/web_development.svg"
+            alt="imagen de mujer escribiendo código"
+          />
+        </figure>
+      </section>
     </header>
+    <!-- contenido principal -->
     <main>
-        <section id="about" class="about main__section">
-            <div class="container">
-                <h2 class="title">Hola!</h2>
-                <p class="paragraph">Soy bachiller en Ingeniería Informática, cuento con tres años de experiencia en el rubro de consultoría informática en el área de operaciones. </p>
-                <p class="paragraph">Actualmente busco colaborar en una posición como Front End Developer debido a que dicha especialidad es de mi interés, por lo que me encuentro en constante capacitación en diversos cursos en línea.</p>                
-            </div>
-            <figure><img src="./imagenes/background/appreciation.svg" alt=""></figure>       
-        </section>
+      <section id="about" class="about main__section">
+        <div class="container">
+          <h2 class="title">Hola!</h2>
+          <p class="paragraph">
+            Soy bachiller en Ingeniería Informática, cuento con tres años de
+            experiencia en el rubro de consultoría informática en el área de
+            operaciones.
+          </p>
+          <p class="paragraph">
+            Actualmente busco colaborar en una posición como Front End Developer
+            debido a que dicha especialidad es de mi interés, por lo que me
+            encuentro en constante capacitación en diversos cursos en línea.
+          </p>
+        </div>
+        <figure>
+          <img src="./imagenes/background/appreciation.svg" alt="" />
+        </figure>
+      </section>
+      <!-- skills -->
+      <section id="skills" class="skills main__section">
+        <div class="container">
+          <h2 class="title">Habilidades</h2>
+          <p class="paragraph">
+            Tengo conocimiento de las siguientes tecnologías:
+          </p>
+        </div>
+        <div class="skills__container">
+          <!-- aqui se renderizaran las habilidades duras -->
+        </div>
+      </section>
+      <!-- portafolio -->
+      <section id="portfolio" class="portfolio main__section">
+        <div class="container">
+          <h2 class="title">Portafolio</h2>
+          <p class="paragraph">
+            A continuación algunos de los proyectos que he realizado:
+          </p>
+        </div>
+        <div class="projects">
 
-        <section id="skills" class="skills main__section">
-            <div class="container">
-                <h2 class="title">Habilidades</h2>
-                <p class="paragraph">Tengo conocimiento de las siguientes tecnologías:</p>
-            </div>
-            <div class="skills__container">
-                <div class="skills__container--item">
-                    <div class="skills__container--item-1"></div>
-                    <span>HTML5</span>
-                </div>
-                <div class="skills__container--item">
-                    <div class="skills__container--item-2"></div>
-                    <span>CSS3</span>
-                </div>
-                <div class="skills__container--item">
-                    <div class="skills__container--item-3"></div>
-                    <span>Javascript</span>
-                </div>
-                <div class="skills__container--item">
-                    <div class="skills__container--item-4"></div>
-                    <span>Tailwind</span>
-                </div>
-                <div class="skills__container--item">
-                    <div class="skills__container--item-5"></div>
-                    <span>Git</span>
-                </div>
-                <div class="skills__container--item">
-                    <div class="skills__container--item-6"></div>
-                    <span>Github</span>
-                </div>
-            </div>   
-        </section>
-
-        <section id="portfolio" class="portfolio main__section">
-            <div class="container">
-                <h2 class="title">Portafolio</h2>
-                <p class="paragraph">A continuación algunos de los proyectos que he realizado:</p>
-            </div>
-            <div class="projects">
-                <div class="project">
-                    <div class="image project-1"></div>
-                    <div class="details">
-                        <h2 class="title">Batatabit</h2>
-                        <p class="paragraph">Landing page de criptomonedas</p>
-                        <div class="links">
-                            <a href="https://github.com/NellyMollocondo/batatabit-landing-page" target="_blank">Github</a>
-                            <a href="https://nellymollocondo.github.io/batatabit-landing-page/index.html" target="_blank">Web</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image project-2"></div>
-                    <div class="details">
-                        <h2 class="title">Platzi Travel</h2>
-                        <p class="paragraph">Landing page de viajes</p>
-                        <div class="links">
-                            <a href="https://github.com/NellyMollocondo/platzi-travel" target="_blank">Github</a>
-                            <a href="https://nellymollocondo.github.io/platzi-travel/public/index.html" target="_blank">Web</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image project-3"></div>
-                    <div class="details">
-                        <h2 class="title">Google clone</h2>
-                        <p class="paragraph">Clone de google</p>
-                        <div class="links">
-                            <a href="https://github.com/NellyMollocondo/google-clone" target="_blank">Github</a>
-                            <a href="https://nellymollocondo.github.io/google-clone/" target="_blank">Web</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image project-4"></div>
-                    <div class="details">
-                        <h2 class="title">To - do</h2>
-                        <p class="paragraph">Lista de pendientes con React</p>
-                        <div class="links">
-                            <a href="https://github.com/NellyMollocondo/to-do" target="_blank">Github</a>
-                            <a href="https://nellymollocondo.github.io/to-do/" target="_blank">Web</a>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-        </section>
-
+        </div>
+      </section>
     </main>
     <footer>
-        <p class="paragraph">Construido con
-         <span><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="red"><path d="m10 15.875-.458-.417q-2.021-1.833-3.334-3.104-1.312-1.271-2.062-2.219-.75-.947-1.031-1.708-.282-.76-.282-1.531 0-1.479 1.042-2.521 1.042-1.042 2.521-1.042 1.042 0 1.979.542T10 5.458q.688-1.041 1.625-1.583t1.979-.542q1.479 0 2.521 1.042 1.042 1.042 1.042 2.521 0 .771-.271 1.51-.271.74-1.021 1.677-.75.938-2.063 2.229-1.312 1.292-3.395 3.188Z"/></svg></span>   
-        por Nelly Mollocondo , 2022</p>
+      <p class="paragraph">
+        Construido con
+        <span><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            width="20"
+            fill="red">
+            <path
+              d="m10 15.875-.458-.417q-2.021-1.833-3.334-3.104-1.312-1.271-2.062-2.219-.75-.947-1.031-1.708-.282-.76-.282-1.531 0-1.479 1.042-2.521 1.042-1.042 2.521-1.042 1.042 0 1.979.542T10 5.458q.688-1.041 1.625-1.583t1.979-.542q1.479 0 2.521 1.042 1.042 1.042 1.042 2.521 0 .771-.271 1.51-.271.74-1.021 1.677-.75.938-2.063 2.229-1.312 1.292-3.395 3.188Z"/>
+        </svg></span>
+        por Nelly Mollocondo , 2022
+      </p>
     </footer>
-    <script src="./app.js"></script>    
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>

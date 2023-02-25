@@ -1,0 +1,338 @@
+:root {
+  --primary: #45505B;
+  --secondary: #0563BB;
+  --background-color: #f2f3f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  color: var(--primary);
+  font-size: 62.5%;
+}
+
+/* encabezado */
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+/* boton el menu */
+.button {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-style: none;
+  text-align: center;
+  background: white;
+}
+
+.button-close {
+  display: none;
+}
+
+.button-menu:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.button-close:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.navbar {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  width: 250px;
+  height: 100vh;
+  padding: 16px;
+  background: white;
+  border-right: 1px solid #e6e9ec;
+  border-bottom: 1px solid #e6e9ec;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 40vh;
+}
+
+.navbar ul li {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  list-style: none;
+  background: #f2f3f5;
+  border-radius: 50px;
+}
+
+.navbar a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.4rem;
+  width: 100%;
+  height: 60px;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: var(--primary);
+  border-radius: 50px;
+}
+
+.navbar a:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.navbar__menu span {
+  margin-left: 4px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
+  font-size: 2rem;
+  font-family: Poppins;
+  background: var(--background-color);
+}
+
+.hero h1 {
+  margin-bottom: 4px;
+  font-size: 3.2rem;
+  font-family: 'Raleway';
+}
+
+.hero p {
+  margin-bottom: 40px;
+  color: #0563bb;
+}
+
+.hero img {
+  width: 250px;
+  height: 250px;
+  opacity: 0.8;
+  padding-top: 40px;
+}
+
+.main__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about img {
+  width: 250px;
+  height: 250px;
+  opacity: 0.8;
+}
+
+.about .container {
+  width: 100%;
+  min-width: 300px;
+  max-width: 680px;
+  padding: 16px;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  padding-bottom: 16px;
+}
+
+.skills {
+  background: var(--background-color);
+}
+
+.skills .container {
+  width: 100%;
+  min-width: 300px;
+  max-width: 900px;
+  padding: 16px;
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-auto-rows: 150px;
+  gap: 10px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.skills__container--item {
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.skills__container--item span {
+  font-size: 1.4rem;
+}
+
+/* portfolio */
+.portfolio .container {
+  width: 100%;
+  min-width: 300px;
+  max-width: 900px;
+  padding: 16px;
+}
+
+.portfolio .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 20px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 900px;
+  padding: 16px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.project:hover .details {
+  opacity: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s ease;
+}
+
+.project .links a {
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  padding: 2px;
+  font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background: #D1D2D4;
+  border-radius: 5px;
+}
+
+.project-1 {
+  border: 1px solid #D1D2D4;
+  background: url(./imagenes/portfolio/batatabit.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-2 {
+  border: 1px solid #f2f3f5;
+  background: url(./imagenes/portfolio/platzi-travel.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-3 {
+  border: 1px solid #f2f3f5;
+  background: url(./imagenes/portfolio/google-clone.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-4 {
+  border: 1px solid #f2f3f5;
+  background: url(./imagenes/portfolio/to-do.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+  background: #f2f3f5;
+}
+
+footer svg {
+  vertical-align: sub;
+  animation-name: heart;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  /* animation-delay: 500ms; */
+}
+
+/* footer:hover svg {
+    transform: scale(1.2);
+} */
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+    transition: transform 500ms ease-in;
+  }
+}
