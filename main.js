@@ -118,6 +118,12 @@ const showProjects = () => {
   })
 }
 
-document.addEventListener('DOMContentLoaded', showHardSkills);
-document.addEventListener('DOMContentLoaded', showProjects);
+// render sections
+const renderSections = () => {
+  location.hash ='#home';
+  showHardSkills();
+  showProjects();
+}
+
+document.addEventListener('DOMContentLoaded', renderSections);
 

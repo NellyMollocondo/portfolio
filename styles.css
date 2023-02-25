@@ -121,9 +121,26 @@ header {
   font-family: 'Raleway';
 }
 
+/* perfil */
+
 .hero p {
   margin-bottom: 40px;
   color: #0563bb;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation: typing 1.5s steps(20, end) forwards,
+  blinking .75s infinite;
+}
+
+@keyframes typing {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+@keyframes blinking {
+  from {border-color: transparent;}
+  to {border-color: orange;}
 }
 
 .hero img {
@@ -167,6 +184,7 @@ header {
   padding-bottom: 16px;
 }
 
+/* skills */
 .skills {
   background: var(--background-color);
 }
@@ -272,37 +290,7 @@ header {
   border-radius: 5px;
 }
 
-.project-1 {
-  border: 1px solid #D1D2D4;
-  background: url(./imagenes/portfolio/batatabit.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-2 {
-  border: 1px solid #f2f3f5;
-  background: url(./imagenes/portfolio/platzi-travel.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-3 {
-  border: 1px solid #f2f3f5;
-  background: url(./imagenes/portfolio/google-clone.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-4 {
-  border: 1px solid #f2f3f5;
-  background: url(./imagenes/portfolio/to-do.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* footer */
 
 footer {
   display: flex;
